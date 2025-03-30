@@ -10,19 +10,18 @@ body {
     position: relative;
 }
 
-.cringe-ahh-stickers{
+.cringe-ahh-stickers {
     position: absolute;
     z-index: -1;
     display: flex;
     gap: 500px;
-
 }
 
-#eatingchips{
+#eatingchips {
     width: 200px;
 }
 
-#owlcat{
+#owlcat {
     width: 200px;
 }
 
@@ -67,11 +66,27 @@ li {
     margin-bottom: 5px;
     border-radius: 3px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-li.completed {
-    text-decoration: line-through;
-    color: #ffb9c2;
+li i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+li.completed i {
+    color: #ea315f;
+}
+
+.scrollable {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px dotted #ffcece;
+}
+
+.scattered-images img {
+    z-index: -1;
+    position: absolute;
+    width: 100px;
+    height: auto;
 }
